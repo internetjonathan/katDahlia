@@ -1,0 +1,26 @@
+// Break points
+$color-red:  #880A0C;
+$color-blue: #C0FFF8;
+$color-yellow: #fbbb45;
+
+$mobile-only: 768px;
+$tablet: 880px;
+$tablet-landscape: 960px;
+$desktop: 1025px;
+$desktop-wide: 1264px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile-only}) { @content; }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) { @content; }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) { @content; }
+}
+
+@mixin desktop-wide {
+  @media (min-width: #{$desktop-wide}) { @content; }
+}
